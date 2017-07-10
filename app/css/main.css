@@ -99,6 +99,7 @@ img {
   background-image: url(../img/cover-background.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative; }
   .intro .intro-text {
@@ -111,7 +112,7 @@ img {
     .intro .intro-text h1 {
       font-size: 86px;
       font-family: "PlayfairDisplay-Bold";
-      text-shadow: 0 1px 0 black, 0 40px 40px black,0 -10px 40px black; }
+      text-shadow: 0 1px 0 black, 0 40px 40px black, 0 -10px 40px black; }
     .intro .intro-text p {
       margin: 140px auto 70px auto;
       font-family: "Railway-Regular";
@@ -249,14 +250,26 @@ img {
   background-image: url("../img/tasty-pancakes-bg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding: 140px 0; }
 
+.pancake-container {
+  position: relative; }
+
 .pancake-image {
-  padding: 0; }
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .pancake-text {
+  position: relative;
   background-color: white;
-  padding: 80px 50px 30px; }
+  padding: 80px 50px 30px;
+  background-image: url(../img/windmill-bg.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: auto 50%; }
   .pancake-text h2 {
     font-family: "Alegreya-Bold";
     font-size: 50px; }
@@ -273,7 +286,8 @@ img {
     letter-spacing: 2px; }
   .pancake-text .slider-container {
     position: relative; }
-    .pancake-text .slider-container #left-arrow-slider, .pancake-text .slider-container #right-arrow-slider {
+    .pancake-text .slider-container #left-arrow-slider,
+    .pancake-text .slider-container #right-arrow-slider {
       position: absolute;
       width: 15%;
       text-align: center;
@@ -286,3 +300,171 @@ img {
     margin: 70px auto 0; }
   .pancake-text .slider-container .owl-item {
     padding: 5px; }
+
+.pancake-time-container {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  right: 16.67%;
+  margin-right: -100px;
+  top: -40px;
+  background-image: url(../img/ready-in-40-bg.png);
+  z-index: 200;
+  box-shadow: 0 0 20px gray;
+  text-align: center;
+  font-family: "Alegreya-Bold"; }
+  .pancake-time-container .ready-in {
+    text-transform: uppercase;
+    color: #a47d5e;
+    font-size: 22px;
+    margin-top: 25px; }
+  .pancake-time-container .number {
+    font-size: 86px;
+    color: #dfc691;
+    line-height: 90px; }
+  .pancake-time-container .min {
+    color: #9d988c;
+    font-size: 20px; }
+
+.breakfast {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/breakfast-bg.jpg);
+  text-align: center;
+  padding: 90px 0; }
+
+.breakfast-price h2 {
+  font-family: "Alegreya-Bold";
+  font-size: 50px;
+  color: white; }
+
+.breakfast-price h3 {
+  color: #a47d5e;
+  text-transform: uppercase;
+  font-family: "Alegreya-Bold";
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin: 10px 0 60px 0; }
+
+.breakfast-price .breakfast-item .breakfast-name {
+  font-family: "Alegreya-Bold";
+  font-size: 32px;
+  color: white;
+  margin-top: 30px; }
+
+.breakfast-price .breakfast-item .breakfast-description {
+  font-family: "Raleway-Regular";
+  font-size: 16px;
+  color: #c2beba;
+  margin-bottom: 10px; }
+
+.breakfast-price .breakfast-item .breakfast-price {
+  font-family: "Alegreya-Regular";
+  font-size: 34px;
+  color: #dfc691; }
+
+.breakfast-message {
+  padding-left: 120px; }
+  .breakfast-message .breakfast-book-image {
+    position: relative; }
+  .breakfast-message .breakfast-menu-text {
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    left: 8%;
+    top: 30%;
+    padding: 0 30px; }
+    .breakfast-message .breakfast-menu-text h3 {
+      font-family: "Alegreya-Bold";
+      font-size: 40px; }
+    .breakfast-message .breakfast-menu-text p {
+      font-family: "Raleway-Bold";
+      margin: 45px 0 50px;
+      line-height: 2; }
+    .breakfast-message .breakfast-menu-text a {
+      font-family: "Alegreya-Bold";
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #a47d5e;
+      padding: 5px 40px;
+      border: 1px solid gray; }
+
+.jibarito-sandwich {
+  background-color: #f3f1e9;
+  background-image: url(../img/jabarito-sandwich-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+  text-align: center; }
+  .jibarito-sandwich h2 {
+    font-family: "Alegreya-Bold";
+    font-size: 50px; }
+  .jibarito-sandwich h3 {
+    color: #a47d5e;
+    text-transform: uppercase;
+    font-family: "Alegreya-Bold";
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 10px 0 60px 0;
+    margin-bottom: 0; }
+
+.ingredient-item h4 {
+  font-family: "Alegreya-Bold";
+  font-size: 30px;
+  margin: 20px 0;
+  color: #a47d5e; }
+
+.ingredient-item p {
+  font-family: "Raleway-Regular";
+  margin-bottom: 55px; }
+
+.recipe {
+  padding: 100px 0 0 10%; }
+  .recipe .recipe-image-container {
+    position: relative; }
+    .recipe .recipe-image-container .full-recipe {
+      position: absolute;
+      bottom: -3.6%;
+      left: -20px;
+      font-family: "Alegreya-Bold";
+      font-size: 18px;
+      text-transform: uppercase;
+      background-color: white;
+      padding: 15px 30px;
+      color: #dfc691;
+      border: 1px dashed #dfc691; }
+    .recipe .recipe-image-container .prepare-time {
+      position: absolute;
+      width: 200px;
+      height: 107.2%;
+      bottom: -3.6%;
+      right: 9px; }
+      .recipe .recipe-image-container .prepare-time .prepare-time-item {
+        font-family: "Alegreya-Bold";
+        height: 33%;
+        background-color: rgba(255, 255, 255, 0.8); }
+        .recipe .recipe-image-container .prepare-time .prepare-time-item .preparation {
+          text-transform: uppercase;
+          color: #a47d5e;
+          font-size: 22px;
+          margin-top: 25px;
+          margin-top: 0;
+          padding-top: 15px; }
+        .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
+          font-size: 86px;
+          color: #dfc691;
+          line-height: 90px; }
+        .recipe .recipe-image-container .prepare-time .prepare-time-item .min {
+          color: #9d988c;
+          font-size: 20px; }
+      .recipe .recipe-image-container .prepare-time .prepare-time-item.middle {
+        margin-top: 1%; }
+      .recipe .recipe-image-container .prepare-time .prepare-time-item.last {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../img/ready-in-50-bg.png); }
+      .recipe .recipe-image-container .prepare-time .prepare-time-item.first .number, .recipe .recipe-image-container .prepare-time .prepare-time-item.middle .number {
+        color: #56534c;
+        font-size: 60px; }

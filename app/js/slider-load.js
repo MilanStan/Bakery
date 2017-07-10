@@ -25,4 +25,16 @@ $(document).ready(function () {
     $('#left-arrow-slider').click(function () {
         owl.trigger('prev.owl.carousel');
     })
+
+    //set height on pancake-image div
+    setPanImageHeight();
+    $(window).resize(function(){
+        setPanImageHeight();
+    })
 });
+
+//set height of pancake-image equal to pancake-text
+function setPanImageHeight(){
+    var heightPan=$(".pancake-text").css("height");
+    $(".pancake-image").css("height", heightPan);
+}

@@ -14,13 +14,13 @@
         h1 {
             font-size: 86px;
             font-family: "PlayfairDisplay-Bold";
-            text-shadow: 0 1px 0 black, 0 40px 40px black,0 -10px 40px black;
+            text-shadow: 0 1px 0 black, 0 40px 40px black, 0 -10px 40px black;
         }
         p {
             margin: 140px auto 70px auto;
             font-family: "Railway-Regular";
-            font-size:30px;
-            width:50%;
+            font-size: 30px;
+            width: 50%;
             text-shadow: 0 1px 0 black, 0 40px 40px black, 0 -10px 40px black;
         }
         .intro-button {
@@ -28,8 +28,8 @@
             border-radius: 0;
             background-color: rgba(0, 0, 0, 0.4);
             font-family: "Alegreya-Bold";
-            text-transform:uppercase;
-            font-size:16px;
+            text-transform: uppercase;
+            font-size: 16px;
             letter-spacing: 2px;
             padding: 10px 40px;
         }
@@ -43,30 +43,32 @@
         background-image: url(../img/bread-medalon.png);
     }
 }
-.art-of-cakes{
+
+.art-of-cakes {
     padding: 90px;
-    text-align:center;
+    text-align: center;
 }
-.chef-cook-container{
+
+.chef-cook-container {
     padding: 0 70px;
-    h2{
+    h2 {
         @include h2-title();
     }
-    h3{
+    h3 {
         @include h3-title();
     }
-    .art-describe{
+    .art-describe {
         @include description();
     }
-    .chef-cook{
-        margin:35px 0;
+    .chef-cook {
+        margin: 35px 0;
         font-family: "Alegreya-Bold";
-        font-size:26px;
+        font-size: 26px;
     }
 }
 
 .chef-cook-data {
-    position:relative;
+    position: relative;
     padding: 20px 50px 0;
     #left,
     #right {
@@ -76,111 +78,300 @@
         border-width: 1px 0;
         border-style: solid;
         border-color: gray;
-        line-height:40px;
+        line-height: 40px;
         font-family: "Alegreya-Regular";
-        font-size:26px;
+        font-size: 26px;
     }
-    #left{
-        text-align:left;
-        padding-left:15px;
+    #left {
+        text-align: left;
+        padding-left: 15px;
     }
     #right {
         text-align: right;
-        padding-right:15px;
+        padding-right: 15px;
     }
-    .chef-cook-image{
-        width:30%;
+    .chef-cook-image {
+        width: 30%;
         background-color: white;
-        text-align:center;
-        position:absolute;
-        top:0;
-        left:35%;
-        margin-top:-10px;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        left: 35%;
+        margin-top: -10px;
     }
 }
-.handwriting{
+
+.handwriting {
     margin-top: 70px;
     font-family: "Scriptina";
     color: $font-brown-color;
-    font-size:28px;
+    font-size: 28px;
 }
 
-.images-container{
+.images-container {
     position: relative;
-    margin-top:50px;
-    .image-container{
-        padding:10px;
-        width:50%;
-        float:left;
-        position:relative;
-        &:before{
+    margin-top: 50px;
+    .image-container {
+        padding: 10px;
+        width: 50%;
+        float: left;
+        position: relative;
+        &:before {
             position: absolute;
-            width:86%;
-            height:84%;
-            top:8%;
-            left:7%;
+            width: 86%;
+            height: 84%;
+            top: 8%;
+            left: 7%;
             border: 5px solid white;
-            content:'';
+            content: '';
         }
     }
-    .medalon-tastes{
+    .medalon-tastes {
         @include medalon(240px, 120px);
-        top:50%;
-        height:230px;
-        margin-top:-115px;
-        background-image:url(../img/medalon-1.png);
+        top: 50%;
+        height: 230px;
+        margin-top: -115px;
+        background-image: url(../img/medalon-1.png);
     }
-    .tastes-so-good{
-        position:absolute;
-        width:100%;
-        text-align:center;
-        top:50%;
-        margin-top:-51px;
-        font-family:"Alegreya-Regular";
-        text-transform:uppercase;
-        font-size:36px;
-        color:lighten($font-brown-color,10%);
+    .tastes-so-good {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 50%;
+        margin-top: -51px;
+        font-family: "Alegreya-Regular";
+        text-transform: uppercase;
+        font-size: 36px;
+        color: lighten($font-brown-color, 10%);
     }
 }
-.tasty-pancakes{
+
+.tasty-pancakes {
     background-image: url("../img/tasty-pancakes-bg.jpg");
     @include bg-cover-center();
     padding: 140px 0;
 }
-.pancake-image{
-    padding: 0;
+
+.pancake-container {
+    position: relative;
 }
-.pancake-text{
+
+.pancake-image {
+    padding: 0;
+    @include bg-cover-center;
+}
+
+.pancake-text {
+    position: relative;
     background-color: white;
     padding: 80px 50px 30px;
-    h2{
+    background-image: url(../img/windmill-bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+    h2 {
         @include h2-title();
     }
-    h3{
+    h3 {
         @include h3-title();
     }
-    p{
+    p {
         @include description();
     }
-    .slider-container{
-        position:relative;
-
-        #left-arrow-slider, #right-arrow-slider{
-            position:absolute;
-            width:15%;
-            text-align:center;
-            top:50%;
-            margin-top:-21px;
+    .slider-container {
+        position: relative;
+        #left-arrow-slider,
+        #right-arrow-slider {
+            position: absolute;
+            width: 15%;
+            text-align: center;
+            top: 50%;
+            margin-top: -21px;
         }
-        #right-arrow-slider{
-            right:0;
+        #right-arrow-slider {
+            right: 0;
         }
     }
-    .slider-container .owl-carousel{
-        width:70%;
+    .slider-container .owl-carousel {
+        width: 70%;
         margin: 70px auto 0;
     }
-    .slider-container .owl-item{
-        padding:5px;
+    .slider-container .owl-item {
+        padding: 5px;
+    }
+}
+
+.pancake-time-container {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 16.67%;
+    margin-right: -100px;
+    top: -40px;
+    background-image: url(../img/ready-in-40-bg.png);
+    z-index: 200;
+    box-shadow: 0 0 20px gray;
+    text-align: center;
+    font-family: "Alegreya-Bold";
+    .ready-in {
+        @include ready-in();
+    }
+    .number {
+        @include number-ready-in();
+    }
+    .min {
+        @include min-ready();
+    }
+}
+
+.breakfast {
+    @include bg-cover-center();
+    background-image: url(../img/breakfast-bg.jpg);
+    text-align: center;
+    padding: 90px 0;
+}
+
+.breakfast-price {
+    h2 {
+        @include h2-title();
+        color: white;
+    }
+    h3 {
+        @include h3-title();
+    }
+    .breakfast-item {
+        .breakfast-name {
+            font-family: "Alegreya-Bold";
+            font-size: 32px;
+            color: white;
+            margin-top: 30px;
+        }
+        .breakfast-description {
+            font-family: "Raleway-Regular";
+            font-size: 16px;
+            color: rgb(194, 190, 186);
+            margin-bottom: 10px;
+        }
+        .breakfast-price {
+            font-family: "Alegreya-Regular";
+            font-size: 34px;
+            color: rgb(223, 198, 145);
+        }
+    }
+}
+
+.breakfast-message {
+    padding-left: 120px;
+    .breakfast-book-image {
+        position: relative;
+    }
+    .breakfast-menu-text {
+        position: absolute;
+        width: 80%;
+        height: 70%;
+        left: 8%;
+        top: 30%;
+        padding: 0 30px;
+        h3 {
+            font-family: "Alegreya-Bold";
+            font-size: 40px;
+        }
+        p {
+            font-family: "Raleway-Bold";
+            margin: 45px 0 50px;
+            line-height: 2;
+        }
+        a {
+            font-family: "Alegreya-Bold";
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $font-brown-color;
+            padding: 5px 40px;
+            border: 1px solid gray;
+        }
+    }
+}
+
+.jibarito-sandwich {
+    background-color: rgb(243, 241, 233);
+    background-image: url(../img/jabarito-sandwich-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    text-align: center;
+    h2 {
+        @include h2-title();
+    }
+    h3 {
+        @include h3-title();
+        margin-bottom: 0;
+    }
+}
+
+.ingredient-item {
+    h4 {
+        font-family: "Alegreya-Bold";
+        font-size: 30px;
+        margin: 20px 0;
+        color: $font-brown-color;
+    }
+    p {
+        font-family: "Raleway-Regular";
+        margin-bottom: 55px;
+    }
+}
+
+.recipe {
+    padding: 100px 0 0 10%;
+    .recipe-image-container {
+        position: relative;
+        .full-recipe {
+            position: absolute;
+            bottom: -3.6%; //20px
+            left: -20px;
+            font-family: "Alegreya-Bold";
+            font-size: 18px;
+            text-transform: uppercase;
+            background-color: white;
+            padding: 15px 30px;
+            color: $font-light-brown;
+            border: 1px dashed $font-light-brown;
+        }
+        .prepare-time{
+            position:absolute;
+            width: 200px;
+            height: 107.2%;
+            bottom: -3.6%;
+            right: 9px;
+            .prepare-time-item{
+                font-family: "Alegreya-Bold";
+                height:33%;
+                background-color: rgba(255,255,255,0.8);
+                .preparation{
+                    @include ready-in();
+                    margin-top:0;
+                    padding-top:15px;
+                }
+                .number{
+                    @include number-ready-in();
+                }
+                .min{
+                    @include min-ready();
+                }
+            }
+            .prepare-time-item.middle{
+                margin-top: 1%;
+            }
+            .prepare-time-item.last{
+                @include bg-cover-center();
+                background-image: url(../img/ready-in-50-bg.png);
+            }
+            .prepare-time-item.first, .prepare-time-item.middle{
+                .number{
+                    color: $font-black-color;
+                    font-size:60px;
+                }
+            }
+        }
     }
 }

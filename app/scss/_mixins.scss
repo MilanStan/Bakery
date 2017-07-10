@@ -1,7 +1,9 @@
-@mixin bg-cover-center{
+@mixin bg-cover-center {
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
+
 @mixin medalon($dimension, $indent) {
     position: absolute;
     height: $dimension;
@@ -23,18 +25,37 @@
     font-family: "Alegreya-Bold";
     font-size: 15px;
     letter-spacing: 1px;
-    margin:10px 0 60px 0;
+    margin: 10px 0 60px 0;
 }
-@mixin description{
-    font-family:"Raleway-Bold";
+
+@mixin description {
+    font-family: "Raleway-Bold";
     line-height: 2;
     letter-spacing: 2px;
 }
+
 @mixin vertical-align() {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
+@mixin ready-in {
+    text-transform: uppercase;
+    color: rgb(164, 125, 94);
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+@mixin number-ready-in {
+    font-size: 86px;
+    color: rgb(223, 198, 145);
+    line-height: 90px;
+}
+
+@mixin min-ready {
+    color: rgb(157, 152, 140);
+    font-size: 20px;
+}
