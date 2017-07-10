@@ -4,8 +4,7 @@
 
 .intro {
     background-image: url(../img/cover-background.jpg);
-    background-position: center;
-    background-size: cover;
+    @include bg-cover-center();
     height: 100vh;
     position: relative;
     .intro-text {
@@ -141,5 +140,47 @@
         text-transform:uppercase;
         font-size:36px;
         color:lighten($font-brown-color,10%);
+    }
+}
+.tasty-pancakes{
+    background-image: url("../img/tasty-pancakes-bg.jpg");
+    @include bg-cover-center();
+    padding: 140px 0;
+}
+.pancake-image{
+    padding: 0;
+}
+.pancake-text{
+    background-color: white;
+    padding: 80px 50px 30px;
+    h2{
+        @include h2-title();
+    }
+    h3{
+        @include h3-title();
+    }
+    p{
+        @include description();
+    }
+    .slider-container{
+        position:relative;
+
+        #left-arrow-slider, #right-arrow-slider{
+            position:absolute;
+            width:15%;
+            text-align:center;
+            top:50%;
+            margin-top:-21px;
+        }
+        #right-arrow-slider{
+            right:0;
+        }
+    }
+    .slider-container .owl-carousel{
+        width:70%;
+        margin: 70px auto 0;
+    }
+    .slider-container .owl-item{
+        padding:5px;
     }
 }

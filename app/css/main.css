@@ -244,3 +244,45 @@ img {
     text-transform: uppercase;
     font-size: 36px;
     color: #b6977f; }
+
+.tasty-pancakes {
+  background-image: url("../img/tasty-pancakes-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 140px 0; }
+
+.pancake-image {
+  padding: 0; }
+
+.pancake-text {
+  background-color: white;
+  padding: 80px 50px 30px; }
+  .pancake-text h2 {
+    font-family: "Alegreya-Bold";
+    font-size: 50px; }
+  .pancake-text h3 {
+    color: #a47d5e;
+    text-transform: uppercase;
+    font-family: "Alegreya-Bold";
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 10px 0 60px 0; }
+  .pancake-text p {
+    font-family: "Raleway-Bold";
+    line-height: 2;
+    letter-spacing: 2px; }
+  .pancake-text .slider-container {
+    position: relative; }
+    .pancake-text .slider-container #left-arrow-slider, .pancake-text .slider-container #right-arrow-slider {
+      position: absolute;
+      width: 15%;
+      text-align: center;
+      top: 50%;
+      margin-top: -21px; }
+    .pancake-text .slider-container #right-arrow-slider {
+      right: 0; }
+  .pancake-text .slider-container .owl-carousel {
+    width: 70%;
+    margin: 70px auto 0; }
+  .pancake-text .slider-container .owl-item {
+    padding: 5px; }
