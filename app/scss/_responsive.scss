@@ -1,0 +1,328 @@
+@media (max-width:1199px) {
+    .navbar-default .navbar-brand {
+        padding-right: 50px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        padding: 25px 15px;
+    }
+    .intro .intro-text h1 {
+        font-size: 74px;
+    }
+    .images-container {
+        margin-top: 80px;
+    }
+    .chef-cook-data {
+        padding: 20px 0 0;
+    }
+    .breakfast-message {
+        padding-left: 15px;
+    }
+    .recipe {
+        padding-top: 140px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
+        line-height: 50px;
+    }
+    .navbar-down-container {
+        padding: 0 0 70px 0;
+    }
+}
+
+@media (max-width:991px) {
+    .intro .intro-text h1 {
+        font-size: 70px;
+    }
+    .tasty-pancakes {
+        padding: 100px 0;
+    }
+    .tastes-container .image-container img {
+        width: 100%;
+    }
+    .tastes-container {
+        padding: 0 50px;
+    }
+    .pancake-image,
+    .pancake-text {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .pancake-image {
+        height: 400px;
+    }
+    .pancake-text {
+        padding: 80px 50px;
+    }
+    .pancake-time-container {
+        right: initial;
+        top: 250px;
+        margin-top: 0;
+    }
+    .breakfast-price{
+        padding: 0 15px;
+    }
+    .breakfast-message {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    .jibarito-sandwich h3 {
+        margin-bottom: 60px;
+    }
+    .recipe {
+        padding: 70px 20px;
+    }
+    .navbar-down-container .navbar-down ul li {
+        width: 15%;
+    }
+    .navbar-down-container .navbar-down ul .brand {
+        display: none;
+        a {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .intro .intro-text h1 {
+        font-size: 54px;
+    }
+    .breakfast-message .breakfast-menu-text {
+        padding: 0 15px;
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            margin: 20px 0 25px;
+        }
+    }
+    .navbar-down-container .navbar-down ul li {
+        width: 30%;
+    }
+    .navbar-down-container .navbar-down ul li:nth-child(3):after {
+        content: '';
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
+        line-height: 40px;
+        font-size: 50px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.first .number,
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.middle .number {
+        font-size: 40px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .preparation {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:599px) {
+    .intro .intro-text h1 {
+        font-size: 48px;
+    }
+    .chef-cook-container h2 {
+        font-size: 44px;
+    }
+    .tastes-container {
+        padding: 0 30px;
+    }
+    .images-container .medalon-tastes {
+        width: 180px;
+        height: 172px;
+        margin-top: -86px;
+        margin-left: -90px
+    }
+    .images-container .tastes-so-good {
+        font-size: 26px;
+        margin-top: -37px;
+    }
+    .pancake-image,
+    .pancake-text {
+        width: 90%;
+    }
+    .pancake-image {
+        height: 300px;
+    }
+    .pancake-text h2 {
+        font-size: 44px;
+    }
+    .pancake-time-container {
+        width: 160px;
+        height: 160px;
+        top: 180px;
+        .number {
+            font-size: 70px;
+            line-height: 60px;
+        }
+    }
+    .breakfast-price h2 {
+        font-size: 44px;
+    }
+    .breakfast-price .breakfast-item .breakfast-name {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .breakfast-message {
+        width: 90%;
+        padding-top: 70px;
+    }
+    .breakfast-message .breakfast-menu-text p {
+        margin: 30px 0 50px;
+    }
+    .jibarito-sandwich {
+        padding-top: 80px;
+        h2 {
+            font-size: 44px;
+        }
+    }
+    .ingredient-item h4 {
+        font-size: 26px;
+        margin: 15px 0;
+    }
+    .recipe {
+        padding: 20px;
+    }
+    .recipe .recipe-image-container .prepare-time {
+        width: 130px;
+        right: 3px;
+    }
+    .recipe .recipe-image-container .full-recipe {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
+        line-height: 30px;
+        font-size: 40px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.first .number,
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.middle .number {
+        font-size: 35px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .preparation {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:479px) {
+    .container{
+        padding:0;
+    }
+    .intro .intro-text {
+        h1 {
+            font-size: 38px;
+        }
+        p {
+            font-size: 24px;
+            width: 70%;
+        }
+    }
+    .chef-cook-container {
+        padding: 0 20px;
+    }
+    .chef-cook-container h2 {
+        font-size: 34px;
+    }
+    .chef-cook-container h3 {
+        margin: 10px 0 30px 0;
+    }
+    .tastes-container {
+        padding: 0;
+    }
+
+    .tasty-pancakes{
+        padding: 30px 0;
+    }
+    .pancake-image {
+        height: 250px;
+    }
+    .pancake-text {
+        padding: 50px 30px;
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            margin: 10px 0 30px 0;
+        }
+    }
+    .pancake-time-container {
+        top: 120px;
+    }
+    .pancake-text .slider-container .owl-carousel {
+        margin: 40px auto 0;
+    }
+    .breakfast-price {
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            margin: 10px 0 30px 0;
+        }
+    }
+    .breakfast-price .breakfast-item .breakfast-name {
+        font-size: 24px;
+    }
+    .breakfast-price .breakfast-item .breakfast-price {
+        font-size: 30px;
+    }
+    .breakfast-message {
+        width: 100%;
+        padding-right: 15px;
+        .breakfast-menu-text {
+            padding: 0 5px;
+            h3 {
+                font-size: 24px;
+            }
+            p {
+                margin: 10px 0 20px 0;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .jibarito-sandwich {
+        h2 {
+            font-size: 34px;
+        }
+        h3 {
+            margin: 10px 0 30px 0;
+        }
+    }
+    .ingredient-item {
+        h4 {
+            font-size: 22px;
+            margin: 10px 0;
+        }
+        p{
+            margin-bottom: 30px;
+        }
+    }
+    .recipe{
+        padding: 10px 20px 50px;
+    }
+    .recipe .recipe-image-container .prepare-time{
+        width:100px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
+        line-height: 20px;
+        font-size: 35px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.first .number,
+    .recipe .recipe-image-container .prepare-time .prepare-time-item.middle .number {
+        font-size: 30px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .preparation {
+        padding-top: 7px;
+        font-size:12px;
+    }
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .min{
+        font-size:14px;
+    }
+
+    .navbar-down-container{
+        padding-bottom: 15px;
+    }
+    .navbar-down-container .navbar-down ul li a{
+        padding: 10px 0;
+        letter-spacing: 0;
+    }
+}

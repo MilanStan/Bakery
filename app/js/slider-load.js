@@ -9,7 +9,7 @@ $(document).ready(function () {
                 items: 3
             },
             768: {
-                items: 2
+                items: 3
             },
             991: {
                 items: 3
@@ -27,14 +27,18 @@ $(document).ready(function () {
     })
 
     //set height on pancake-image div
-    setPanImageHeight();
-    $(window).resize(function(){
+    if ($(window).Width() > 991) {
         setPanImageHeight();
+    }
+    $(window).resize(function () {
+        if ($(window).Width() > 991) {
+            setPanImageHeight();
+        }
     })
 });
 
 //set height of pancake-image equal to pancake-text
-function setPanImageHeight(){
-    var heightPan=$(".pancake-text").css("height");
+function setPanImageHeight() {
+    var heightPan = $(".pancake-text").css("height");
     $(".pancake-image").css("height", heightPan);
 }

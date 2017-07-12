@@ -111,7 +111,7 @@
     }
 
     .art-of-cakes {
-        padding: 90px;
+        padding: 90px 0;
         text-align: center;
     }
 
@@ -131,6 +131,9 @@
             font-family: "Alegreya-Bold";
             font-size: 26px;
         }
+    }
+    .tastes-container{
+        padding:0;
     }
 
     .chef-cook-data {
@@ -276,9 +279,6 @@
             width: 70%;
             margin: 70px auto 0;
         }
-        .slider-container .owl-item {
-            padding: 5px;
-        }
     }
 
     .pancake-time-container {
@@ -422,7 +422,7 @@
                 width: 200px;
                 height: 107.2%;
                 bottom: -3.6%;
-                right: 9px;
+                right: 7px;
                 .prepare-time-item {
                     font-family: "Alegreya-Bold";
                     height: 33%;
