@@ -168,13 +168,14 @@ a:hover {
     position: relative;
     top: 50%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    padding-top: 70px; }
     .intro .intro-text h1 {
       font-size: 86px;
       font-family: "PlayfairDisplay-Bold";
       text-shadow: 0 1px 0 black, 0 40px 40px black, 0 -10px 40px black; }
     .intro .intro-text p {
-      margin: 140px auto 70px auto;
+      margin: 70px auto;
       font-family: "Railway-Regular";
       font-size: 30px;
       width: 50%;
@@ -611,6 +612,57 @@ a:hover {
     padding: 0 0 70px 0; } }
 
 @media (max-width: 991px) {
+  .container-fluid > .navbar-collapse,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container > .navbar-header {
+    margin-right: 0;
+    margin-left: 0; }
+  .navbar-header {
+    float: none; }
+  .navbar-left,
+  .navbar-right {
+    float: none !important; }
+  .navbar-toggle {
+    display: block;
+    margin: 18px 0;
+    border-color: white; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+  .navbar-nav > li {
+    float: none;
+    text-align: center; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .collapse.in {
+    display: block !important;
+    background-color: white;
+    z-index: 500;
+    position: relative; }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white; }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent; }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5); }
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:visited, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > .active > a:hover {
+    color: #56534c;
+    background-color: transparent;
+    border-bottom: 1px dashed #56534c;
+    font-size: 30px; }
+  .navbar-left > li > a:after {
+    content: ''; }
   .intro .intro-text h1 {
     font-size: 70px; }
   .tasty-pancakes {
@@ -736,6 +788,10 @@ a:hover {
 @media (max-width: 479px) {
   .container {
     padding: 0; }
+  .navbar-default .navbar-brand {
+    padding-left: 15px; }
+  .navbar-default .navbar-toggle {
+    margin-right: 15px; }
   .intro .intro-text h1 {
     font-size: 38px; }
   .intro .intro-text p {
@@ -760,7 +816,8 @@ a:hover {
     .pancake-text h3 {
       margin: 10px 0 30px 0; }
   .pancake-time-container {
-    top: 120px; }
+    top: 120px;
+    left: 5px; }
   .pancake-text .slider-container .owl-carousel {
     margin: 40px auto 0; }
   .breakfast-price h2 {
@@ -793,6 +850,8 @@ a:hover {
     margin-bottom: 30px; }
   .recipe {
     padding: 10px 20px 50px; }
+  .recipe .recipe-image-container .full-recipe {
+    left: -5px; }
   .recipe .recipe-image-container .prepare-time {
     width: 100px; }
   .recipe .recipe-image-container .prepare-time .prepare-time-item .number {

@@ -29,6 +29,84 @@
 }
 
 @media (max-width:991px) {
+    //////////////////////////////////////////////////////
+    //Start of reset menu bar when is active toggle button
+    //Apply on breakpoint where we set for toggle button
+    .container-fluid>.navbar-collapse,
+    .container-fluid>.navbar-header,
+    .container>.navbar-collapse,
+    .container>.navbar-header {
+        margin-right: 0;
+        margin-left: 0; //End of reset menu bar when is active toggle button
+        //////////////////////////////////////////////////////
+    } //////////////////////////////////////////////////
+    //Start - Change breakpoint for bootstrap nav menu
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        margin: 18px 0; //mine changing padding of toogle button
+        border-color: white; //mine changing border color of toggle button
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+        text-align:center; //center menu item when menu is opened
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+        background-color: rgba(255,255,255,1); //next 3 rows change background color of opened menu
+        z-index: 500;   // in order to be in front of content we must set z-index
+        position: relative;  //z-index only works with non static position
+    }
+    //mine changing color of dashes in hamburger button
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+    //mine change background color of toogle menu button where is active, visited, focus
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    //setting of line below menu bar when menu is opened
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    }
+    //Changing color of menu item and add bottom border below menu item
+    .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav>li>a:visited,.navbar-default .navbar-nav>li>a:hover , .navbar-default .navbar-nav>.active>a:hover {
+        color: $font-black-color;
+        background-color: transparent; //color of menu item background
+        border-bottom: 1px dashed $font-black-color;
+        font-size:30px;
+    }
+     //End - Change breakpoint for bootstrap nav menu
+    ////////////////////////////////////////////////
+    .navbar-left>li>a:after {
+        content: '';
+    }
     .intro .intro-text h1 {
         font-size: 70px;
     }
@@ -57,7 +135,7 @@
         top: 250px;
         margin-top: 0;
     }
-    .breakfast-price{
+    .breakfast-price {
         padding: 0 15px;
     }
     .breakfast-message {
@@ -202,8 +280,14 @@
 }
 
 @media (max-width:479px) {
-    .container{
-        padding:0;
+    .container {
+        padding: 0;
+    }
+    .navbar-default .navbar-brand{
+        padding-left:15px;
+    }
+    .navbar-default .navbar-toggle{
+        margin-right:15px;
     }
     .intro .intro-text {
         h1 {
@@ -226,8 +310,7 @@
     .tastes-container {
         padding: 0;
     }
-
-    .tasty-pancakes{
+    .tasty-pancakes {
         padding: 30px 0;
     }
     .pancake-image {
@@ -244,6 +327,7 @@
     }
     .pancake-time-container {
         top: 120px;
+        left:5px;
     }
     .pancake-text .slider-container .owl-carousel {
         margin: 40px auto 0;
@@ -278,7 +362,6 @@
             }
         }
     }
-
     .jibarito-sandwich {
         h2 {
             font-size: 34px;
@@ -292,15 +375,18 @@
             font-size: 22px;
             margin: 10px 0;
         }
-        p{
+        p {
             margin-bottom: 30px;
         }
     }
-    .recipe{
+    .recipe {
         padding: 10px 20px 50px;
     }
-    .recipe .recipe-image-container .prepare-time{
-        width:100px;
+    .recipe .recipe-image-container .full-recipe{
+        left:-5px;
+    }
+    .recipe .recipe-image-container .prepare-time {
+        width: 100px;
     }
     .recipe .recipe-image-container .prepare-time .prepare-time-item .number {
         line-height: 20px;
@@ -312,16 +398,15 @@
     }
     .recipe .recipe-image-container .prepare-time .prepare-time-item .preparation {
         padding-top: 7px;
-        font-size:12px;
+        font-size: 12px;
     }
-    .recipe .recipe-image-container .prepare-time .prepare-time-item .min{
-        font-size:14px;
+    .recipe .recipe-image-container .prepare-time .prepare-time-item .min {
+        font-size: 14px;
     }
-
-    .navbar-down-container{
+    .navbar-down-container {
         padding-bottom: 15px;
     }
-    .navbar-down-container .navbar-down ul li a{
+    .navbar-down-container .navbar-down ul li a {
         padding: 10px 0;
         letter-spacing: 0;
     }

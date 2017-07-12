@@ -77,13 +77,14 @@
             text-align: center;
             color: white;
             @include vertical-align();
+            padding-top:70px;
             h1 {
                 font-size: 86px;
                 font-family: "PlayfairDisplay-Bold";
                 text-shadow: 0 1px 0 black, 0 40px 40px black, 0 -10px 40px black;
             }
             p {
-                margin: 140px auto 70px auto;
+                margin: 70px auto;
                 font-family: "Railway-Regular";
                 font-size: 30px;
                 width: 50%;
