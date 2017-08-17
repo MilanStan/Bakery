@@ -27,11 +27,11 @@ $(document).ready(function () {
     })
 
     //set height on pancake-image div
-    if ($(window).Width() > 991) {
+    if ($(window).width() > 991) {
         setPanImageHeight();
     }
     $(window).resize(function () {
-        if ($(window).Width() > 991) {
+        if ($(window).width() > 991) {
             setPanImageHeight();
         }
     })
